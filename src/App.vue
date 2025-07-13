@@ -6,6 +6,8 @@ import StoriesPlayer from './components/StoriesPlayer.vue'
 
 import logo from './assets/icons/logo.png'
 
+const BASE = import.meta.env.VITE_PUBLIC_BASE
+
 const stories: Story[] = [
   {
     info: {
@@ -15,19 +17,19 @@ const stories: Story[] = [
     },
     sources: [
       {
-        url: '/videos/webm/1.webm',
+        url: `${BASE}videos/webm/1.webm`,
         format: VideoFormat.WEBM,
       },
       {
-        url: '/videos/av1/1.mp4',
+        url: `${BASE}videos/av1/1.mp4`,
         format: VideoFormat.AV1,
       },
       {
-        url: '/videos/h264/1.mp4',
+        url: `${BASE}videos/h264/1.mp4`,
         format: VideoFormat.H264,
       },
       {
-        url: '/videos/original/1.mp4',
+        url: `${BASE}videos/original/1.mp4`,
       },
     ],
   },
@@ -39,19 +41,19 @@ const stories: Story[] = [
     },
     sources: [
       {
-        url: '/videos/webm/2.webm',
+        url: `${BASE}videos/webm/2.webm`,
         format: VideoFormat.WEBM,
       },
       {
-        url: '/videos/av1/2.mp4',
+        url: `${BASE}videos/av1/2.mp4`,
         format: VideoFormat.AV1,
       },
       {
-        url: '/videos/h264/2.mp4',
+        url: `${BASE}videos/h264/2.mp4`,
         format: VideoFormat.H264,
       },
       {
-        url: '/videos/original/2.mp4',
+        url: `${BASE}videos/original/2.mp4`,
       },
     ],
   },
@@ -63,19 +65,19 @@ const stories: Story[] = [
     },
     sources: [
       {
-        url: '/videos/webm/3.webm',
+        url: `${BASE}videos/webm/3.webm`,
         format: VideoFormat.WEBM,
       },
       {
-        url: '/videos/av1/3.mp4',
+        url: `${BASE}videos/av1/3.mp4`,
         format: VideoFormat.AV1,
       },
       {
-        url: '/videos/h264/3.mp4',
+        url: `${BASE}videos/h264/3.mp4`,
         format: VideoFormat.H264,
       },
       {
-        url: '/videos/original/3.mp4',
+        url: `${BASE}videos/original/3.mp4`,
       },
     ],
   },
@@ -87,7 +89,7 @@ const stories: Story[] = [
     },
     sources: [
       {
-        url: '/videos/original/2.mp4',
+        url: `${BASE}videos/original/2.mp4`,
       },
     ],
   },
@@ -99,19 +101,19 @@ const stories: Story[] = [
     },
     sources: [
       {
-        url: '/videos/webm/3.webm',
+        url: `${BASE}videos/webm/3.webm`,
         format: VideoFormat.WEBM,
       },
       {
-        url: '/videos/av1/3.mp4',
+        url: `${BASE}videos/av1/3.mp4`,
         format: VideoFormat.AV1,
       },
       {
-        url: '/videos/h264/3.mp4',
+        url: `${BASE}videos/h264/3.mp4`,
         format: VideoFormat.H264,
       },
       {
-        url: '/videos/original/3.mp4',
+        url: `${BASE}videos/original/3.mp4`,
       },
     ],
   },
@@ -123,8 +125,3 @@ const stories: Story[] = [
     <StoriesPlayer :stories="stories" />
   </div>
 </template>
-
-<style scoped>
-.stories-page {
-}
-</style>

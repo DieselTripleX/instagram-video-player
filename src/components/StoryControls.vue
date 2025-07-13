@@ -25,9 +25,9 @@ const emit = defineEmits<{
     <button class="playback" @click="emit('togglePlayback')">
       <component :is="props.isPlaying ? IconPause : IconPlay" />
     </button>
-    <button class="close" @click="emit('close')">
+    <a href="https://www.upstars.com/" class="close" @click="emit('close')">
       <IconClose />
-    </button>
+    </a>
   </div>
 </template>
 
@@ -44,7 +44,8 @@ const emit = defineEmits<{
     }
   }
 
-  button {
+  button,
+  a {
     all: unset;
     display: flex;
     justify-content: center;

@@ -177,7 +177,6 @@ onUnmounted(() => {
       :isMuted="isMuted"
       @togglePlayback="togglePlayback"
       @toggleMute="toggleMute"
-      @close="() => console.log('Закрыть')"
     />
 
     <video
