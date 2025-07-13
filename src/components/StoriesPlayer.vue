@@ -233,7 +233,7 @@ onUnmounted(() => {
 
   @include tablet {
     max-width: none;
-    height: 100vh;
+    height: 100dvh;
 
     border-radius: 0;
   }
