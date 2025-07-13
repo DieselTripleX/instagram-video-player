@@ -125,3 +125,9 @@ const stories: Story[] = [
     <StoriesPlayer :stories="stories" />
   </div>
 </template>
+
+<style>
+.stories-page {
+  flex: 1;
+}
+</style>

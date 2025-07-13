@@ -245,10 +245,6 @@ onUnmounted(() => {
     object-fit: cover;
 
     border-radius: inherit;
-
-    @include tablet {
-      aspect-ratio: 1;
-    }
   }
 
   .control-btn {
