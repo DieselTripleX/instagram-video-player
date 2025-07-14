@@ -85,11 +85,11 @@ const stories: Story[] = [
     info: {
       avatar: logo,
       username: 'Upstars',
-      description: 'Pets',
+      description: ':)))',
     },
     sources: [
       {
-        url: `${BASE}videos/original/2.mp4`,
+        url: `${BASE}videos/meme.mp4`,
       },
     ],
   },
