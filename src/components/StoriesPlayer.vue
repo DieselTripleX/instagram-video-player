@@ -231,6 +231,8 @@ onUnmounted(() => {
   margin: auto;
   border-radius: 20px;
 
+  background-color: var(--story-bg);
+
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
