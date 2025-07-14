@@ -51,12 +51,19 @@ const emit = defineEmits<{
 .dashboard {
   position: absolute;
   top: 0;
+
   display: flex;
   flex-direction: column;
   gap: 10px;
+
   width: 100%;
   padding: 24px;
+
+  border-radius: inherit;
+
   z-index: 11;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
 
   .story-progress {
     display: flex;
