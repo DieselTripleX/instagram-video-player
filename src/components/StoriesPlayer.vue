@@ -245,6 +245,10 @@ onUnmounted(() => {
     object-fit: cover;
 
     border-radius: inherit;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
   }
 
   .control-btn {
