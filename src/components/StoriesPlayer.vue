@@ -231,6 +231,10 @@ onUnmounted(() => {
   margin: auto;
   border-radius: 20px;
 
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
   @include tablet {
     max-width: none;
     height: 100dvh;
@@ -245,10 +249,6 @@ onUnmounted(() => {
     object-fit: cover;
 
     border-radius: inherit;
-
-    user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
   }
 
   .control-btn {
